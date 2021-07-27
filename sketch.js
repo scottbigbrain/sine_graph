@@ -68,7 +68,7 @@ function draw() {
 	stroke(220);
 	fill(200);
 	textSize(20);
-	text("Time: " + round(t/1000), 40, height-120);
+	text("Time: " + Math.round((t/1000)*10)/10, 40, height-120);
 
 	// draw distance turned
 	strokeWeight(0.5);
