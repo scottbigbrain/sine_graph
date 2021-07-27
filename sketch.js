@@ -60,21 +60,21 @@ function draw() {
 	strokeWeight(0.5);
 	stroke(220);
 	fill(200);
-	textSize(24);
+	textSize(20);
 	text("Speed: "+speed.value(), 40, height-80);
 
 	// draw time
 	strokeWeight(0.5);
 	stroke(220);
 	fill(200);
-	textSize(24);
+	textSize(20);
 	text("Time: " + round(t/1000), 40, height-120);
 
 	// draw distance turned
 	strokeWeight(0.5);
 	stroke(220);
 	fill(200);
-	textSize(24);
+	textSize(20);
 	text("Distance Turned: " + Math.round(a*100)/100, 40, height-40);
 
 	// update angle
