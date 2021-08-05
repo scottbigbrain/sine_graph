@@ -30,6 +30,11 @@ function setup() {
 }
 
 function draw() {
+	if (windowWidth != width || windowHeight != height) {
+		resizeCanvas(windowWidth, windowHeight);
+		makeSlides();
+	}
+
 	background(20);
 
 	// draw & update dots
@@ -110,4 +115,21 @@ function Reset() {
 	dots = [];
 	t = 0;
 	a = start_a;
+}
+
+function makeSlides() {
+	speed.position(width/10, 50);
+	speed.style("width", width - width/5 + "px");
+
+	reset.position(width/2, height - 60);
+	reset.size(90, 40);
+	reset.style("border", "none");
+	reset.style("font-size", "20px");
+	reset.style("background-color", "#dcdcdc");
+	reset.style("color", "#141414");
+	reset.style("border-radius", "8px");
+	reset.mousePressed(Reset);
+
+	start.position(width/2 + 140, height - 60);
+	start.style("width", width/2 - 160 + "px");
 }
