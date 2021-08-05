@@ -118,6 +118,8 @@ function Reset() {
 }
 
 function makeSlides() {
+	dots = [];
+
 	speed.position(width/10, 50);
 	speed.style("width", width - width/5 + "px");
 
